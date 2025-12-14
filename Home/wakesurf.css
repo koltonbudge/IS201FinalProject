@@ -1,0 +1,115 @@
+/* wakesurf.css - custom stylesheet from scratch */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif; /* font family requirement */
+  color: #1b1b1b; /* font color requirement */
+  background: linear-gradient(180deg, #e8f4ff, #ffffff); /* custom background color */
+}
+
+header {
+  padding: 12px 16px;
+  background: #0b2a3a;
+  color: white;
+}
+
+header h1 {
+  margin-bottom: 6px;
+  font-size: 2rem;   /* slightly smaller title */
+}
+
+header h1 {
+  margin: 0 0 6px 0;
+  letter-spacing: 0.3px;
+}
+
+.navLinks a {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-right: 10px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.12);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.navLinks a:hover {
+  background: rgba(255,255,255,0.22);
+  transform: translateY(-1px);
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 6px 12px 15px;
+}
+
+/* div #1 */
+.card {
+  background: white;
+  border: 1px solid #d8e6ef;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  margin-bottom: 18px;
+}
+
+/* div #2 */
+.grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 16px;
+}
+
+img.photo {
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid #d8e6ef;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #e7f6ff;
+  border: 1px solid #c9eaff;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.small {
+  color: #4b4b4b;
+  font-size: 0.95rem;
+}
+
+/* div #3 */
+.footerBox {
+  text-align: center;
+  padding: 18px;
+  border-top: 1px solid #d8e6ef;
+  color: #3b3b3b;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: #0b2a3a;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 820px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
